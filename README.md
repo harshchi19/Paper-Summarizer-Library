@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Paper Summarizer & Explainer
 
 **Paper Summarizer & Explainer** is a Python library designed to help students and researchers quickly digest complex academic papers. The library extracts text from PDFs or accepts raw text and uses Azure AI Inference (leveraging GitHub models) to generate concise summaries that highlight key concepts and define technical terms. Additionally, it provides an optional feature to generate simple diagrams or flowcharts from the summary.
@@ -19,3 +20,6 @@
 
 ```bash
 pip install azure-ai-inference PyPDF2 graphviz
+=======
+# Paper-Summarizer-Library
+>>>>>>> 4c97106fd4657a42ab26434e3a22d0130f9c2bab
