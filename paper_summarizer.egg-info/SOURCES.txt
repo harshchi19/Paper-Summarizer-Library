@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+paper_summarizer/__init__.py
+paper_summarizer/diagram_generator.py
+paper_summarizer/pdf_extractor.py
+paper_summarizer/summarizer.py
+paper_summarizer.egg-info/PKG-INFO
+paper_summarizer.egg-info/SOURCES.txt
+paper_summarizer.egg-info/dependency_links.txt
+paper_summarizer.egg-info/requires.txt
+paper_summarizer.egg-info/top_level.txt

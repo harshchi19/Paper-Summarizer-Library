@@ -1,0 +1,4 @@
+azure-ai-inference>=0.1.0
+PyPDF2>=3.0.0
+graphviz>=0.20.1
+azure-ai-textanalytics>=5.1.0
