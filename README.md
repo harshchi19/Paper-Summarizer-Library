@@ -1,6 +1,11 @@
 # Paper Summarizer & Explainer
+<<<<<<< HEAD
 
 **Paper Summarizer & Explainer** is a Python library designed to help students and researchers quickly digest complex academic papers. The library extracts text from PDFs or accepts raw text and uses Groq to generate concise summaries that highlight key concepts and define technical terms. Additionally, it provides an optional feature to generate simple diagrams or flowcharts from the summary.
+=======
+# Pypi Link = https://pypi.org/project/paper-academic-summarizer/
+**Paper Summarizer & Explainer** is a Python library designed to help students and researchers quickly digest complex academic papers. The library extracts text from PDFs or accepts raw text and uses Azure AI Inference (leveraging GitHub models) to generate concise summaries that highlight key concepts and define technical terms. Additionally, it provides an optional feature to generate simple diagrams or flowcharts from the summary.
+>>>>>>> 39c69d9eb6032e0dfbfc9aa30e54574ad4debf5a
 
 ## Features
 
@@ -18,6 +23,7 @@
 ### Install Dependencies
 
 ```bash
+<<<<<<< HEAD
 pip install Groq PyPDF2 graphviz
 ```
 
@@ -89,3 +95,8 @@ This project is licensed under the MIT License.
 
 For any questions or inquiries, please contact [harshchitaliya193@gmail.com](mailto:harshchitaliya193@gmail.com).
 
+=======
+pip install azure-ai-inference PyPDF2 graphviz
+
+
+>>>>>>> 39c69d9eb6032e0dfbfc9aa30e54574ad4debf5a
