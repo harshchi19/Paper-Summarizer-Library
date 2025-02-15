@@ -24,6 +24,7 @@ pip install Groq PyPDF2 graphviz
 ```
 
 ## Example Usage
+```bash 
 import os
 import re
 from paper_academic_summarizer import summarize_paper, generate_diagram
@@ -70,7 +71,7 @@ def main():
 
 if __name__ == "__main__":
     main()
-
+```
 
 ## Contributing
 
