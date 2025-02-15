@@ -91,8 +91,4 @@ This project is licensed under the MIT License.
 
 For any questions or inquiries, please contact [harshchitaliya193@gmail.com](mailto:harshchitaliya193@gmail.com).
 
-=======
-pip install azure-ai-inference PyPDF2 graphviz
 
-
->>>>>>> 39c69d9eb6032e0dfbfc9aa30e54574ad4debf5a
