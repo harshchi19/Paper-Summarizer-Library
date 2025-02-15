@@ -30,7 +30,7 @@
 #     main()
 
 import os
-from paper_summarizer import summarize_paper
+from paper_academic_summarizer import summarize_paper
 from graphviz import Digraph
 
 def generate_short_colorful_diagram(summary: str, output_file: str = "short_diagram"):

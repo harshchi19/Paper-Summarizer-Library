@@ -1,21 +1,14 @@
-import os
-from azure.ai.inference import ChatCompletionsClient
-from azure.ai.inference.models import SystemMessage, UserMessage
-from azure.core.credentials import AzureKeyCredential
+from groq import Groq
 
-# Hardcoded credentials provided by you
-ENDPOINT = "https://models.inference.ai.azure.com"
-MODEL_NAME = "gpt-4o"
-GITHUB_TOKEN = "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"
+# Directly set the Groq API key and model name
+GROQ_API_KEY = "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"
+MODEL_NAME = "llama-3.3-70b-versatile"
 
 def summarize_text(text: str, temperature: float = 0.7, max_tokens: int = 1500) -> str:
     """
-    Summarizes academic paper text using Azure AI Inference.
+    Summarizes academic paper text using the Groq API.
     """
-    client = ChatCompletionsClient(
-        endpoint=ENDPOINT,
-        credential=AzureKeyCredential(GITHUB_TOKEN)
-    )
+    client = Groq(api_key=GROQ_API_KEY)
     
     prompt_intro = (
         "You are an expert academic summarizer and explainer. "
@@ -25,19 +18,16 @@ def summarize_text(text: str, temperature: float = 0.7, max_tokens: int = 1500) 
     )
     
     messages = [
-        SystemMessage("You are a helpful assistant for academic paper summarization."),
-        UserMessage(prompt_intro + text)
+        {"role": "system", "content": "You are a helpful assistant for academic paper summarization."},
+        {"role": "user", "content": prompt_intro + text}
     ]
     
-    response = client.complete(
+    chat_completion = client.chat.completions.create(
         messages=messages,
-        temperature=temperature,
-        max_tokens=max_tokens,
-        model=MODEL_NAME
+        model=MODEL_NAME,
     )
     
-    summary = response.choices[0].message.content
-    client.close()
+    summary = chat_completion.choices[0].message.content
     return summary
 
 def summarize_paper(input_data: str, is_pdf: bool = False) -> str:

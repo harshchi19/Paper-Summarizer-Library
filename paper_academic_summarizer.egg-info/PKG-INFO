@@ -1,3 +1,28 @@
+Metadata-Version: 2.2
+Name: paper_academic_summarizer
+Version: 0.2.2
+Summary: A library for summarizing and explaining academic papers
+Home-page: https://github.com/harshchi19/Paper-Summarizer-Library.git
+Author: Harsh Chitaliya
+Author-email: haarshchitaliya193@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: groq>=0.9.1
+Requires-Dist: PyPDF2>=3.0.0
+Requires-Dist: graphviz>=0.20.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
 # Paper Summarizer & Explainer
 
 **Paper Summarizer & Explainer** is a Python library designed to help students and researchers quickly digest complex academic papers. The library extracts text from PDFs or accepts raw text and uses Groq to generate concise summaries that highlight key concepts and define technical terms. Additionally, it provides an optional feature to generate simple diagrams or flowcharts from the summary.
